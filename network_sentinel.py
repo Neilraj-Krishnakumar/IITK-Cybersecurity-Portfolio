@@ -1,7 +1,10 @@
+import sys
 import random
 import time
 
 def execute_network_sentinel():
+    print("SYSTEM PLATFORM NATIVE LAYER:", sys.platform)
+    print("DIAGNOSTIC TRACK TIMESTAMP:", time.strftime("%H:%M:%S"))
     print("INITIALIZING CORE NETWORK INTEGRITY SENTINEL SYSTEM")
     time.sleep(1)
 
