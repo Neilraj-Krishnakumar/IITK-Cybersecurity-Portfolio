@@ -1,7 +1,10 @@
+import sys
 import random
 import time
 
 def simulate_auth_sentinel():
+    print("SYSTEM PLATFORM NATIVE LAYER:", sys.platform)
+    print("SENTINEL WATCH TIMESTAMP:", time.strftime("%H:%M:%S"))
     print("INITIALIZING SECURE PORTAL AUTHENTICATION SENTINEL")
     time.sleep(1)
 
