@@ -1,7 +1,10 @@
+import sys
 import random
 import time
 
 def evaluate_password_strength():
+    print("SYSTEM PLATFORM NATIVE LAYER:", sys.platform)
+    print("AUDITOR CORE TIMESTAMP:", time.strftime("%H:%M:%S"))
     print("INITIALIZING ENTERPRISE CREDENTIAL AUDITING ENGINE")
     time.sleep(1)
 
