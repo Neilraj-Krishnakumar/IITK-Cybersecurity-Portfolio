@@ -1,7 +1,10 @@
+import sys
 import random
 import time
 
 def execute_crypto_vault():
+    print("SYSTEM PLATFORM NATIVE LAYER:", sys.platform)
+    print("VAULT CRYPTO TIMESTAMP:", time.strftime("%H:%M:%S"))
     print("INITIALIZING NATIONAL CRYPTOGRAPHIC SECTOR VAULT")
     time.sleep(1)
 
