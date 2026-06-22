@@ -1,7 +1,10 @@
+import sys
 import random
 import time
 
 def run_network_sensor() :
+    print("SYSTEM PLATFORM NATIVE LAYER:", sys.platform)
+    print("SENSOR ONLINE TIMESTAMP:", time.strftime("%H:%M:%S"))
     print("INITIALIZING PACKET SNIFFER PROTOCOL")
     time.sleep(1)
 
