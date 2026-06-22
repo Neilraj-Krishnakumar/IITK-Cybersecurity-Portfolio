@@ -1,7 +1,10 @@
+import sys
 import random
 import time
 
 def scan_log_database():
+    print("SYSTEM PLATFORM NATIVE LAYER:", sys.platform)
+    print("TIMESTAMP:", time.strftime("%H:%M:%S"))
     print("STARTING SECURE FORENSIC DATABASE SCRAPE PROTOCOL")
     time.sleep(1)
 
