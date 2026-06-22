@@ -5,7 +5,7 @@ def simulate_auth_sentinel():
     print("INITIALIZING SECURE PORTAL AUTHENTICATION SENTINEL")
     time.sleep(1)
 
-    target_access_string = "IITK_SECURE_2026"
+    target_access_string = "SECURE_GATEWAY_2026"
     active_attempts_count = 0
     system_access_granted = False
 
@@ -13,7 +13,7 @@ def simulate_auth_sentinel():
         active_attempts_count = active_attempts_count + 1
         system_timestamp = time.strftime("%H:%M:%S")
 
-        possible_keys = ["GUEST_PASS", "ADMIN_123", "IITK_SECURE_2026", "ROOT_ACCESS"]
+        possible_keys = ["GUEST_PASS", "ADMIN_123", "SECURE_GATEWAY_2026", "ROOT_ACCESS"]
         generated_attempt_string = random.choice(possible_keys)
 
         print("SENTINEL AUDIT: EVALUATING AUTHENTICATION FRAME " + str(active_attempts_count) + "AT" + system_timestamp)
