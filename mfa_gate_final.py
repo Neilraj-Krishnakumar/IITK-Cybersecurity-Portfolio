@@ -1,20 +1,32 @@
-import random 
+import random
+import time
 
-username = input("Enter username : ")
-security_password = input("Enter security password : ")
-security_pin = input("Enter security pin : ")
+print("=============================================================")
+print("[DEVSECOPS INSIGHT]: Automated Token Verification Active")
+print("[PERIMETER NODE]: Multi-Factor Authentication Entry Gate")
+print("===========================================================")
+
+username = input("Enter admin username: ")
+security_password = input("Enter security password: ")
+security_pin = input("Enter security pin: ")
 
 num1 = random.randint(20, 80)
 num2 = random.randint(20, 80)
 expected_sum = num1 + num2
-math_challenge = input("SECURITY MATH CHALLENGE : What is " + str(num1) + " + " + str(num2) + "? ")
+
+print("\n[ALERT]: Anti-Automation Token Required to bypass proxy checks.")
+math_challenge = input(f"SECURITY MATH CHALLENGE: What is {num1} + {num2}? ")
 
 identity_check = (username == "Neilraj Krishnakumar")
 password_check = (security_password == "Swami@1234")
 pin_check = (security_pin == "1234")
-security_math_check= (math_challenge ==  str(expected_sum))
+math_check = (math_challenge == str(expected_sum))
 
-if identity_check and pin_check and password_check and security_math_check :
-	print("ACCESS GRANTED : National Infrastructure Portal Open")
-else :
-	print("ACCESS DENIED : Authentication Faliure . Connection Terminated")
+print("\n------------------------------------------------------------------")
+if identity_check and password_check and pin_check and math_check:
+    print("STATUS: ACCESS GRANTED. National Infrastructure Portal Unlocked.")
+    print("LOG: Gateway session initialized under secure compliance parameters.")
+else:
+    print("STATUS: ACCESS DENIED. Authentication Failure.")
+    print("LOG: Connection securely terminated by Layer 1 Perimeter Sentinel.")
+print("================================================================")
