@@ -3,6 +3,10 @@ import random
 import time
 
 def evaluate_password_strength():
+    print("=============================================================================================")
+    print("[SONARQUBE AUDITOR]: Alphanumeric Compliance Enforcement")
+    print("[DEVSECOPS POLICY]: Validating Credential Complexity")
+    print("======================================================================================")
     print("SYSTEM PLATFORM NATIVE LAYER:", sys.platform)
     print("AUDITOR CORE TIMESTAMP:", time.strftime("%H:%M:%S"))
     print("INITIALIZING ENTERPRISE CREDENTIAL AUDITING ENGINE")
@@ -27,9 +31,12 @@ def evaluate_password_strength():
             print("VALIDATION PASS: Minimum length verified.")
             print("POLICY STATUS: APPROVED FOR ACCESS MATRIX LAYER.")
 
-        time.sleep(1)
+        time.sleep(0.5)
+        
+    print("--------------------------------------------------------------------------------------------------")
     print("CREDENTIALS POLICY INTEGRITY CHECK COMPLETED")
     print("Total unique access strings evaluated:", records_audited)
+    print("==============================================================================================")
 
 evaluate_password_strength()   
 
