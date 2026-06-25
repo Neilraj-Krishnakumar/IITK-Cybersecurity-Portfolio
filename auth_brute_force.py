@@ -3,6 +3,10 @@ import random
 import time
 
 def simulate_auth_sentinel():
+    print("============================================================================================")
+    print("[BURP SUITE SENTINEL]: Active Infiltration Watch Node")
+    print("[DEVSECOPS PARAMETER]: Testing Antigravity 2.0 Loops")
+    print("========================================================================================")
     print("SYSTEM PLATFORM NATIVE LAYER:", sys.platform)
     print("SENTINEL WATCH TIMESTAMP:", time.strftime("%H:%M:%S"))
     print("INITIALIZING SECURE PORTAL AUTHENTICATION SENTINEL")
@@ -19,7 +23,7 @@ def simulate_auth_sentinel():
         possible_keys = ["GUEST_PASS", "ADMIN_123", "SECURE_GATEWAY_2026", "ROOT_ACCESS"]
         generated_attempt_string = random.choice(possible_keys)
 
-        print("SENTINEL AUDIT: EVALUATING AUTHENTICATION FRAME " + str(active_attempts_count) + "AT" + system_timestamp)
+        print(f"\n[SENTINEL AUDIT {active_attempts_count}] AT {system_timestamp}")
         print("  [EVALUATED STRING DATA] : " + generated_attempt_string)
 
         if generated_attempt_string == target_access_string:
@@ -28,8 +32,11 @@ def simulate_auth_sentinel():
         else:
             print(" STATUS ENGINE REPORT: INVALID CREDENTIALS. MALICIOUS VECTOR BLOCKED ")
 
-        time.sleep(1)
+        time.sleep(0.5)
     
+    print("-----------------------------------------------------------------------------------------------")
     print("PORTAL SECURITY WATCH CYCLES COMPLETED")
     print("Total transaction authorization logs processed: " + str(active_attempts_count))
-    simulate_auth_sentinel()
+    print("==========================================================================================")
+
+simulate_auth_sentinel()
